@@ -1,0 +1,72 @@
+\documentclass[journal,12pt,two column]{IEEEtran}
+\usepackage[cmex10]{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{stfloats}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{nopageno}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{hyperref}
+\setlength{\parindent}{0em}
+\usepackage{color}
+\usepackage{comment}
+
+\usepackage[T1]{fontenc}
+\setlength{\parindent}{0pt}
+
+
+\title{AI1103 - Assignment 3}
+\author{Monika Kharadi - CS20BTECH11026}
+\date{March 2021}
+\begin{document}
+\maketitle
+\section*{\large\textbf{Problem :}}
+3. The mean and variance, respectively of a binomial distribution for n independent trials with the probability of success as p, are \\
+(A) $\sqrt{np}$, np(1-2p)\\
+(B) $\sqrt{np}$, $\sqrt{np(1-p)}$\\
+(C) np, np \\
+(D) np, np(1-p)
+\section*{\large\textbf{Solution}}
+Let $X_1,X_2,X_3,....,X_n$ be the random variable for n independent trials \\ \\
+Expected Value for n trials : 
+\begin{align}
+E(X_i) &= X_i p_i \nonumber\\
+E(X_i) &= p
+\end{align}
+We know that,
+\begin{align}
+E(X) &= \sum_{i=1}^n E (X_i) \nonumber\\
+E(X) &= np
+ \end{align}
+Mean of a binomial distribution for n independent trials is \textbf{np}.\\ \\
+Now,
+\begin{align}
+E(X_i^2) &= X_i^2 p_i \nonumber\\
+E(X_i^2) &= p
+\end{align}
+For variance,
+\begin{align}
+    Var(X_i) &= E(X_i^2) - E(X_i)^2 \\
+    Var(X_i) &= p - p^2 
+    \end{align}
+We can add Var($X_i$)  to get Var(X)  as these are independent trials
+\begin{align}
+Var(X) &= \sum_{i=1}^n Var(X_i) \nonumber \\
+Var(X) &= n(p - p^2)\nonumber\\
+Var(X) &= np(1-p)
+\end{align}
+Variance of a binomial distribution for n independent trials is \textbf{np(1-p)}.\\ \\
+Hence, (D) is correct option.
+
+
+\end{document}
+
+
+
